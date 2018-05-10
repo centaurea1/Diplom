@@ -1,0 +1,618 @@
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    width: 100%;
+    min-width: 940px;
+}
+
+.small-wrap {
+    text-align: center;
+    margin: auto;
+    display: block;
+    width: 940px;
+    padding-bottom: 110px;
+}
+
+.center {
+    text-align: center;
+}
+
+.header {
+    background: url('https://i.lensdump.com/i/8BXycc.jpg') -50px;
+    height: 700px;
+}
+
+.header .logo {
+    float: left;
+    margin-top: 40px;
+}
+
+.header .logo:hover {
+    transform: rotate(360deg);
+    transition: all 0.5s ease-out;
+}
+
+.header .nav {
+    list-style: none;
+    float: right;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.header .nav li {
+    display: inline-block;
+    padding-right: 34px;
+    letter-spacing: 1px;
+}
+
+.header .nav li:last-of-type {
+    padding-right: 0;
+}
+
+.header .nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    position: relative;
+}
+
+a:before {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background: white;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    left: 50%;
+    bottom: -5px;
+}
+
+a:after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background: white;
+    transition: width 0.3s ease-in-out;
+    left: 50%;
+    bottom: -5px;
+}
+
+.header .nav a:hover:after {
+    width: 50%;
+}
+
+.header .nav a:hover:before {
+    width: 50%;
+    left: 0;
+}
+
+.header .center-block {
+    clear: both;
+    text-align: center;
+}
+
+.header .big-title {
+    font-size: 70px;
+    padding-top: 0px;
+    margin-bottom: 65px;
+    margin-top: 20px;
+}
+
+.header .italic-title {
+    font-size: 42px;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+.header .big-title,
+.header .italic-title,
+.contact .big-title {
+    color: white;
+}
+
+.header .button {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background: rgb(254, 209, 54);
+    padding: 22px 50px;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.header .button:hover {
+    opacity: 0.7;
+}
+
+.services .services-set {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 55px;
+}
+
+.services .icon {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    background: url('http://funkyimg.com/i/2EWGb.png') no-repeat;
+}
+
+.services .set-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: rgb(34, 34, 34);
+    margin-bottom: 5px;
+}
+
+.services .set-text {
+    font-family: 'Roboto Slab', serif;
+    font-size: 13px;
+    color: rgb(119, 119, 119);
+    line-height: 20px;
+}
+
+.services .e-commerce {
+    background-position: 0 0;
+}
+
+.services .responsive {
+    background-position: -95px 0;
+}
+
+.services .security {
+    background-position: -185px 0;
+}
+
+.portfolio {
+    background: rgb(247, 247, 247);
+}
+
+.portfolio .img-set {
+    display: block;
+    background: #ffffff;
+    width: 31%;
+    margin-top: 55px;
+    float: left;
+    margin-right: 30px;
+}
+
+.portfolio .img-set:nth-child(4),
+.portfolio .img-set:nth-child(7) {
+    margin-right: 0;
+}
+
+.portfolio .small-wrap:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.portfolio .img-zoom {
+    overflow: hidden;
+    width: 290px;
+    height: 300px;
+}
+
+.portfolio .img-zoom img {
+    width: 290px;
+    height: 300px;
+    font-size: 0;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.portfolio .img-zoom img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.portfolio .img-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    color: rgb(51, 51, 51);
+    letter-spacing: -1px;
+}
+
+.portfolio .img-set .italic {
+    font-style: italic;
+    font-family: 'Vollkorn', serif;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: rgb(115, 115, 115);
+}
+
+.portfolio .small-wrap {
+    margin-bottom: 20px;
+}
+
+.about .about-title {
+    padding-bottom: 60px;
+}
+
+.about .rounded {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    text-align: center;
+    background: rgb(241, 241, 241);
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+
+.about .strip {
+    position: relative;
+}
+
+.about .strip:before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 1px;
+    background: rgb(241, 241, 241);
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.about .img-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: rgb(34, 34, 34);
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 26px;
+}
+
+.about .img-text {
+    font-family: 'Roboto Slab', serif;
+    color: rgb(119, 119, 119);
+    font-size: 13px;
+    line-height: 22px;
+    margin: 0;
+    letter-spacing: -0.2px;
+}
+
+.about .inline {
+    display: inline-block;
+}
+
+.about .empty,
+.about .about-set {
+    width: 33%;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.about .about-set {
+    padding-left: 40px;
+    text-align: left;
+}
+
+.about .july-text,
+.about .december-text {
+    text-align: right;
+    padding-right: 40px;
+    padding-left: 0;
+}
+
+.about .july {
+    background: url('http://funkyimg.com/i/2EXTS.jpg') -25px 0;
+    border: 5px solid rgb(241, 241, 241);
+}
+
+.about .january {
+    background: url('http://funkyimg.com/i/2EXTR.jpg') -20px 0;
+    border: 5px solid rgb(241, 241, 241);
+}
+
+.about .december {
+    background: url('http://funkyimg.com/i/2EXTQ.jpg') -130px -120px;
+    border: 5px solid rgb(241, 241, 241);
+}
+
+.about .february {
+    background: url('http://funkyimg.com/i/2EXTP.jpg') -20px 0;
+    border: 5px solid rgb(241, 241, 241);
+}
+
+.about .continues {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+    background: rgb(254, 209, 54);
+    border: 5px solid rgb(241, 241, 241);
+    ;
+}
+
+.about .continues .text {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    padding: 12% 0;
+}
+
+.team {
+    background: rgb(249, 249, 249);
+    clear: both;
+}
+
+.team .small-wrap {
+    text-align: center;
+}
+
+.team .avatar-set {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin-top: 65px;
+}
+
+.team .avatar {
+    width: 220px;
+    height: 220px;
+    background: rgb(17, 17, 17);
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.team .name {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(34, 34, 34);
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.team .position {
+    font-family: 'Roboto Slab', serif;
+    color: rgb(119, 119, 119);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.team .social {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: url('http://funkyimg.com/i/2EWGa.png') no-repeat;
+}
+
+.team .social:hover {
+    opacity: 0.5;
+}
+
+.team .twitter {
+    background-position: -50px 0;
+}
+
+.team .facebook {
+    background-position: -100px 0;
+}
+
+.team .pinterest {
+    background-position: 0 0;
+}
+
+.team .google {
+    background-position: -150px 0;
+}
+
+.team a {
+    font-size: 0;
+}
+
+.team .text-center {
+    font-family: 'Roboto Slab', serif;
+    color: rgb(119, 119, 119);
+    font-size: 15px;
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+
+.team .big-title {
+    padding-top: 115px;
+    padding-bottom: 5px;
+    letter-spacing: -1.2px;
+}
+
+.promotion .small-wrap {
+    text-align: center;
+    font-size: 0;
+}
+
+.promotion img {
+    padding: 7.3% 50px 7.3% 0;
+    vertical-align: middle;
+    transition: all 0.5s ease-out;
+}
+
+.promotion img:hover {
+    transform: scale(1.1);
+}
+
+.promotion .small-wrap {
+    padding: 0;
+}
+
+.contact {
+    background: #272727 url('http://funkyimg.com/i/2EWG5.png') no-repeat 108% 110px;
+}
+
+.contact .big-title {
+    padding-top: 95px;
+    padding-bottom: 5px;
+}
+
+.contact .message {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.contact input[type="submit"] {
+    width: 240px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: rgb(254, 209, 54);
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px 0;
+    border: none;
+}
+
+.contact input[type="submit"]:hover {
+    opacity: 0.7;
+}
+
+.contact .message {
+    margin-top: 70px;
+    margin: 0 auto;
+}
+
+.contact .message textarea {
+    box-sizing: border-box;
+    width: 455px;
+    height: 210px;
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.contact input[type="text"] {
+    float: left;
+    height: 50px;
+    width: 455px;
+    border-radius: 3px;
+    padding-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: none;
+}
+
+::-webkit-input-placeholder {
+    color: rgb(187, 187, 187);
+}
+
+::-moz-placeholder {
+    color: rgb(187, 187, 187);
+}
+
+:-moz-placeholder {
+    color: rgb(187, 187, 187);
+}
+
+:-ms-input-placeholder {
+    color: rgb(187, 187, 187);
+}
+
+.contact:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.footer .social-footer {
+    max-width: 200px;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.footer .copyright {
+    float: left;
+    padding-right: 120px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(85, 85, 85);
+    padding: 20px 0;
+}
+
+.footer .social-black {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: url('http://funkyimg.com/i/2EWG4.png') no-repeat;
+}
+
+.footer .twitter {
+    background-position: 0 0;
+}
+
+.footer .facebook {
+    background-position: -50px 0;
+}
+
+.footer .pinterest {
+    background-position: -100px 0;
+}
+
+.footer .google {
+    background-position: -150px 0;
+}
+
+.footer a {
+    font-size: 0;
+}
+
+.footer a:hover {
+    opacity: 0.5;
+}
+
+.footer .small-wrap {
+    padding: 0;
+}
+
+.italic-title {
+    font-style: italic;
+    font-size: 18px;
+    font-family: 'Vollkorn', serif;
+    letter-spacing: 0.8px;
+    margin-top: 0;
+    color: rgb(119, 119, 119);
+}
+
+.big-title {
+    text-transform: uppercase;
+    font-size: 38px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 107px;
+    margin-bottom: 6px;
+    margin-top: 0;
+    color: rgb(34, 34, 34);
+}
